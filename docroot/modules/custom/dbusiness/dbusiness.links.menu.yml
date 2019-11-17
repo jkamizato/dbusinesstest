@@ -1,0 +1,14 @@
+
+# Spa entity menu items definition
+entity.spa_entity.collection:
+  title: 'Spa List'
+  route_name: entity.spa_entity.collection
+  description: 'List Spa pages'
+  parent: system.admin_structure
+  weight: 100
+
+spa_entity.admin.structure.settings:
+  title: 'Spa Settings'
+  description: 'Configure Spa entity entities'
+  route_name: spa_entity.settings
+  parent: system.admin_structure

@@ -1,0 +1,20 @@
+add spa entity entities:
+  title: 'Create new Spa entity entities'
+
+administer spa entity entities:
+  title: 'Administer Spa entity entities'
+  description: 'Allow to access the administration form to configure Spa entity entities.'
+  restrict access: true
+
+delete spa entity entities:
+  title: 'Delete Spa entity entities'
+
+edit spa entity entities:
+  title: 'Edit Spa entity entities'
+
+view published spa entity entities:
+  title: 'View published Spa entity entities'
+
+view unpublished spa entity entities:
+  title: 'View unpublished Spa entity entities'
+

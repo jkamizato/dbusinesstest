@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+/**
+ * Implements hook_theme().
+ */
+function dbusiness_theme($existing, $type, $theme, $path) {
+  return [
+    'page__spa' => [
+      'file' => 'page_spa.theme.inc',
+    ],
+  ];
+}

@@ -1,0 +1,15 @@
+FROM 'drupal:8-fpm'
+
+WORKDIR /var/www/html
+
+#RUN mkdir /var/www/html/drupal-composer
+#RUN mv /var/www/html/composer.json /var/www/html/drupal-composer/
+
+#COPY composer.json /var/www/html/composer.json
+#RUN rm -rf composer.lock
+
+#RUN curl https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+#RUN composer update
+
+#RUN composer install

@@ -1,0 +1,29 @@
+{
+    "name": "julio/dbusinesstest",
+    "description": "Drupal Digital Business Test",
+    "authors": [
+        {
+            "name": "Júlio Hidemi Kamizato",
+            "email": "jkamizato@gmail.com"
+        }
+    ],
+    "require": {
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/smtp": "^1.0",
+        "drupal/inline_entity_form": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "merge-plugin": {
+            "require": [
+                "drupal-composer/composer.json"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ]
+}

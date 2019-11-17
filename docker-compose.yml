@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  drupal:
+    container_name: "dbusinesstest_drupal"
+    build:
+      context: ./docker
+      dockerfile: Dockerfile-drupal
+    ports:
+      - 8888:80
+    volumes:
+      - "./docroot/modules:/var/www/html/modules"
+      - "./docroot/profiles:/var/www/html/profiles"
+      - "./docroot/themes:/var/www/html/themes"
+      # this takes advantage of the feature in Docker that a new anonymous
+      # volume (which is what we're creating here) will be initialized with the
+      # existing content of the image at the same location
+      - "./docroot/sites:/var/www/html/sites"
+      - "./docroot/vendor:/var/www/html/vendor"
+    restart: always

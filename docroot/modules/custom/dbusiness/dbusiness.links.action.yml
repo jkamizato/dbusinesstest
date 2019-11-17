@@ -1,0 +1,5 @@
+entity.spa_entity.add_form:
+  route_name: entity.spa_entity.add_form
+  title: 'Add Spa Page'
+  appears_on:
+    - entity.spa_entity.collection
