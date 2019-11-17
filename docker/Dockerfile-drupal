@@ -1,4 +1,4 @@
-FROM 'drupal:8-fpm'
+FROM 'drupal:8-apache'
 
 WORKDIR /var/www/html
 
