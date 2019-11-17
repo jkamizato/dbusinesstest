@@ -12,7 +12,6 @@ services:
       - "./docroot/modules:/var/www/html/modules"
       - "./docroot/profiles:/var/www/html/profiles"
       - "./docroot/themes:/var/www/html/themes"
-      - "./docroot/sites:/var/www/html/sites"
     restart: always
   mysql:
     image: mysql
