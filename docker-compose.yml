@@ -14,3 +14,13 @@ services:
       - "./docroot/themes:/var/www/html/themes"
       - "./docroot/sites:/var/www/html/sites"
     restart: always
+  mysql:
+    image: mysql
+    container_name: "dbusinesstest_mysql"
+    entrypoint: ['/entrypoint.sh', '--default-authentication-plugin=mysql_native_password']
+    environment:
+      MYSQL_ROOT_PASSWORD: drupal
+      MYSQL_USER: drupal
+      MYSQL_PASSWORD: drupal
+      MYSQL_DATABASE: drupal
+    restart: always
