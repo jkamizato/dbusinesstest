@@ -198,6 +198,25 @@ class SpaEntity extends ContentEntityBase implements SpaEntityInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+
+      $fields['contato'] = BaseFieldDefinition::create('entity_reference')
+          ->setLabel(t('Contato'))
+          ->setDescription(t('Contato'))
+          ->setSetting('target_type', 'node')
+          ->setSetting('handler_settings', ['target_bundles' => ['contact_form' => 'contact_form']])
+          ->setSetting('handler', 'default:node')
+          ->setRequired(TRUE)
+          ->setDefaultValue('Contato')
+          ->setRevisionable(FALSE)
+          ->setCardinality(6)
+          ->setDisplayOptions('view', [
+              'label' => 'hidden',
+              'weight' => -4,
+              'type' => 'contact_field_formatter'
+          ])
+          ->setDisplayConfigurable('form', TRUE)
+          ->setDisplayConfigurable('view', TRUE);
+
     return $fields;
   }
 
