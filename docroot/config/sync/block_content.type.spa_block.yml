@@ -1,0 +1,8 @@
+uuid: d4553640-2c6b-4082-9ce5-9b06aa7a85f9
+langcode: en
+status: true
+dependencies: {  }
+id: spa_block
+label: 'SPA Block'
+revision: 0
+description: ''

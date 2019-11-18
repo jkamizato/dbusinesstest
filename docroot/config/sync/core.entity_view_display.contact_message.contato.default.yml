@@ -1,0 +1,20 @@
+uuid: 92501453-c783-4122-a0bd-94e1ada41128
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+id: contact_message.contato.default
+targetEntityType: contact_message
+bundle: contato
+mode: default
+content:
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

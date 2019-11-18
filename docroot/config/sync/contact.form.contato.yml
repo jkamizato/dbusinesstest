@@ -1,0 +1,12 @@
+uuid: a42d7f2e-6626-4548-b47b-2b2a6cb1c1ab
+langcode: en
+status: true
+dependencies: {  }
+id: contato
+label: Contato
+recipients:
+  - jkamizato@gmail.com
+reply: ''
+weight: 0
+message: ''
+redirect: ''

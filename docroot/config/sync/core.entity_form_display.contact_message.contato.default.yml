@@ -1,0 +1,33 @@
+uuid: 738b37da-cd63-4ce7-a511-cd3ea797e34b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contato
+id: contact_message.contato.default
+targetEntityType: contact_message
+bundle: contato
+mode: default
+content:
+  mail:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 2
+    settings:
+      rows: 12
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  name:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  copy: true
+  preview: true
+  subject: true

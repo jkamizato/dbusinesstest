@@ -1,0 +1,43 @@
+uuid: 9c7603b1-e804-401c-96be-5cca97f01b2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spa_block
+    - field.field.block_content.spa_block.body
+    - field.field.block_content.spa_block.field_spa_block_imagem
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.spa_block.default
+targetEntityType: block_content
+bundle: spa_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_spa_block_imagem:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

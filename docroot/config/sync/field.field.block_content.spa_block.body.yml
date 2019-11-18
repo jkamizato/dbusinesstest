@@ -1,0 +1,22 @@
+uuid: adb432f7-bdd9-411b-a4a8-f696f09b27e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spa_block
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.spa_block.body
+field_name: body
+entity_type: block_content
+bundle: spa_block
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

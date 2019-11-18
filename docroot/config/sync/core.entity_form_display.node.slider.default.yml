@@ -1,0 +1,57 @@
+uuid: 695c2c6c-68f8-40f6-863d-5d9f0ce518d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.slider.field_slide_imagem
+    - field.field.node.slider.field_slide_link
+    - field.field.node.slider.field_slide_texto
+    - image.style.thumbnail
+    - node.type.slider
+  module:
+    - image
+    - link
+id: node.slider.default
+targetEntityType: node
+bundle: slider
+mode: default
+content:
+  field_slide_imagem:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_slide_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_slide_texto:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

@@ -28,3 +28,7 @@ function template_preprocess_spa_entity(array &$variables) {
     $variables['content'][$key] = $variables['elements'][$key];
   }
 }
+
+function template_preprocess_page(array &$variables) {
+
+}

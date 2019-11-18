@@ -1,0 +1,33 @@
+uuid: 8edd2446-304b-445a-a3c0-8ac8d7c3c37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.spa_block
+    - field.field.block_content.spa_block.body
+    - field.field.block_content.spa_block.field_spa_block_imagem
+  module:
+    - image
+    - text
+id: block_content.spa_block.default
+targetEntityType: block_content
+bundle: spa_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_spa_block_imagem:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

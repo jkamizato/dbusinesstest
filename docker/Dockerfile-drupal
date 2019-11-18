@@ -9,6 +9,7 @@ COPY settings.local.php /var/www/html/sites/default/settings.local.php
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh && \
     apt-get update && apt-get install --no-install-recommends -y \
     curl \
+    vim \
     wget \
     git \
     unzip \
